@@ -1,0 +1,143 @@
+body {
+  background-color: blue; 
+  background-image: linear-gradient(#0052b0, #e618e6); 
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+  border-radius: 15px;
+}
+ul li:hover {
+  background: #f3f3f3;
+  transition: 0.3s;
+  animation: pulse;
+  animation-duration: 2s; 
+  background-color: black;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  width: fit-content;
+}
+
+#list label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid yellow;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+
+}
+#list input:checked + label:before {
+  background: #37F713;
+} 
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 28px;
+    padding: 0px 0px;
+    border-radius: 3px;
+
+}
+.delete:hover {
+  background: black;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+h1 {
+  text-align: center;
+  font-family: 'verdana', monospace;
+  color: white;
+  display: inline-block;
+}
+.add-task {
+  width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 11px;
+    border: 3px solid #0a0a0a;
+    margin-bottom: 3px;
+    border-radius: 15px;
+}
+
+}
+#total-tasks {
+  margin-bottom: 20px;
+  font-size: 13px;
+    margin-left: 2px;
+    color: black;
+}
+
+.button {
+  font-weight: 900;
+  font-size: 150%;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+#head{
+  text-align: center;
+  margin: :30px;
+}

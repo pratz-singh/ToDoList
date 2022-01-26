@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Todo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="head">
+    <h1>Todo List</h1>
+    <img src="task_emoji.png" class="delete">
+    </div>
+    <div id="container">
+      <div>
+      <input placeholder="Add a task here" class="add-task" id="add" data-helloWord="asdasdas"/>
+      <span class="button">+</span>
+      </div>
+      <span id="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
+      <ul id="list">
+        <!-- <li>
+          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+          <label for="task1">Buy groceries</label>
+          <img src="bin.svg" class="delete" data-id="12" />
+        </li> -->
+      </ul>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
